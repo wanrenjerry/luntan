@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="fx_forum_pane" prefHeight="493.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ForumsControl">
+   <children>
+      <Label alignment="CENTER" layoutY="12.0" prefHeight="30.0" prefWidth="430.0" text="论坛列表">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="fx_forum_listview" layoutY="44.0" prefHeight="379.0" prefWidth="430.0" />
+      <Label layoutX="5.0" layoutY="462.0" text="论坛主题：" />
+      <Button fx:id="fx_forum_add_btn" layoutX="384.0" layoutY="459.0" mnemonicParsing="false" onAction="#onBtnAddForum" text="添加" />
+      <Button fx:id="fx_forum_del_btn" layoutY="423.0" mnemonicParsing="false" onAction="#onBtnDelete" prefHeight="30.0" prefWidth="215.0" text="删除论坛">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="fx_forums_update_btn" layoutX="215.0" layoutY="423.0" mnemonicParsing="false" onAction="#onBtnUpdate" prefHeight="30.0" prefWidth="215.0" text="查看修改">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="fx_forum_topic_text" layoutX="65.0" layoutY="459.0" prefHeight="23.0" prefWidth="312.0" />
+   </children>
+</AnchorPane>

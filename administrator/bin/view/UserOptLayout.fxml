@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="fx_useropt_pane" prefHeight="364.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserOptControl">
+   <children>
+      <Label layoutX="6.0" layoutY="185.0" prefHeight="31.0" prefWidth="81.0" text="用户名称:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="180.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../drawable/user_new.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="fx_user_name_label" layoutX="87.0" layoutY="189.0" prefHeight="25.0" prefWidth="207.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="6.0" layoutY="273.0" text="角色设置:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="fx_user_combox" layoutX="87.0" layoutY="273.0" prefHeight="23.0" prefWidth="178.0" />
+      <Button fx:id="fx_user_update_btn" layoutX="69.0" layoutY="317.0" mnemonicParsing="false" onAction="#onBtnUpdate" prefHeight="23.0" prefWidth="178.0" text="确认修改">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="6.0" layoutY="218.0" text="用户密码:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_user_password_label" layoutX="87.0" layoutY="217.0" prefHeight="25.0" prefWidth="207.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="6.0" layoutY="245.0" text="当前角色:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_user_juese_label" layoutX="87.0" layoutY="244.0" prefHeight="25.0" prefWidth="207.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

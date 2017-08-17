@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="fx_mainlayout_pane" prefHeight="630.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainLayoutControl">
+   <children>
+      <TabPane fx:id="fx_mainlayout_tabpane" layoutX="4.0" layoutY="125.0" prefHeight="500.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab id="main_luntan_tab" fx:id="fx_mainlayout_forum_tab" text="论坛主题">
+             <content>
+                 <fx:include fx:id="fx_forum_tab_pane" source="ForumTabLayout.fxml" />
+             </content>
+          </Tab>
+          
+          <Tab id="main_post_tab" fx:id="fx_mainlayout_mypost_tab" text="我的帖子">
+             <content>
+                 <fx:include fx:id="fx_mypost_tab_pane" source="MyPostTabLayout.fxml" />
+             </content>
+          </Tab>
+          
+          <Tab id="main_about_tab" fx:id="fx_mainlayout_about_tab" text="关于系统">
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

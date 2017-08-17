@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="fx_main_pane" prefHeight="517.0" prefWidth="430.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <TabPane fx:id="fx_main_tabpane" prefHeight="517.0" prefWidth="430.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="fx_main_usertab" text="用户管理界面" >
+               <content>
+                 <fx:include fx:id="fx_user_pane" source="UsersLayout.fxml" />
+             </content>
+          </Tab>
+          <Tab fx:id="fx_main_forumtab" text="论坛管理界面" >
+              <content>
+                 <fx:include fx:id="fx_forum_pane" source="ForumsLayout.fxml"/>
+              </content>
+          </Tab>
+          <Tab fx:id="fx_main_posttab" text="帖子管理界面" >
+              <content>
+                 <fx:include fx:id="fx_post_pane" source="PostsLayout.fxml"/>
+              </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

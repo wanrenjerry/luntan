@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="con_pane" fx:id="fx_con_pane" prefHeight="240.0" prefWidth="355.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.ConnectControl">
+   <children>
+      <ImageView fitHeight="184.0" fitWidth="413.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../drawable/connect.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="6.0" layoutY="207.0" text="服务器IP：" />
+      <TextField id="ip_text" fx:id="fx_ip_text" layoutX="59.0" layoutY="203.0" prefHeight="23.0" prefWidth="234.0" />
+      <Button id="con_btn" fx:id="fx_con_btn" layoutX="300.0" layoutY="203.0" mnemonicParsing="false" onAction="#onBtnCon" text="连接" />
+   </children>
+</AnchorPane>

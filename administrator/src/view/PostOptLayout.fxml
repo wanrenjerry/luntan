@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="fx_postopt_pane" prefHeight="415.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PostOptControl">
+   <children>
+      <ImageView fitHeight="180.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../drawable/post_new.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="4.0" layoutY="189.0" text="帖子名称:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_post_postname_label" layoutX="86.0" layoutY="184.0" prefHeight="29.0" prefWidth="208.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="217.0" text="帖子作者:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_post_postauthor_label" layoutX="87.0" layoutY="212.0" prefHeight="29.0" prefWidth="208.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="330.0" text="特定设置:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="fx_post_top_checkbox" layoutX="87.0" layoutY="331.0" mnemonicParsing="false" text="置顶">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="fx_post_see_checkbox" layoutX="203.0" layoutY="331.0" mnemonicParsing="false" text="隐藏">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="fx_post_update_btn" layoutX="176.0" layoutY="367.0" mnemonicParsing="false" onAction="#onBtnUpdate" text="确认修改">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label layoutX="4.0" layoutY="244.0" text="帖子时间:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="271.0" text="所属论坛:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="3.0" layoutY="301.0" text="是否置顶:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="301.0" text="是否可见:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_post_date_label" layoutX="87.0" layoutY="238.0" prefHeight="29.0" prefWidth="208.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_post_forum_label" layoutX="85.0" layoutY="265.0" prefHeight="29.0" prefWidth="208.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_post_istop_label" layoutX="84.0" layoutY="298.0" prefHeight="29.0" prefWidth="64.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_post_issee_label" layoutX="234.0" layoutY="298.0" prefHeight="29.0" prefWidth="58.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="fx_post_content_btn" layoutX="41.0" layoutY="367.0" mnemonicParsing="false" onAction="#onBtnContent" text="帖子内容">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

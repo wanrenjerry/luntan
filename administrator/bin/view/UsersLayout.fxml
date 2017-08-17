@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="fx_user_pane" prefHeight="488.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UsersControl">
+   <children>
+      <ListView fx:id="fx_user_listview" layoutY="44.0" prefHeight="410.0" prefWidth="430.0" />
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="10.0" prefHeight="34.0" prefWidth="430.0" text="用户列表">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="fx_user_Delete_btn" layoutY="454.0" mnemonicParsing="false" onAction="#onBtnDelete" prefHeight="34.0" prefWidth="215.0" text="删除用户">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="fx_user_update_btn" layoutX="215.0" layoutY="454.0" mnemonicParsing="false" onAction="#onBtnUpdate" prefHeight="34.0" prefWidth="215.0" text="查看修改">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

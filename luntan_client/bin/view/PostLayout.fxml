@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="fx_post_pane" prefHeight="480.0" prefWidth="452.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PostControl">
+   <children>
+      <Label layoutX="14.0" layoutY="20.0" text="发帖时间：" />
+      <TextField fx:id="fx_post_date_text" editable="false" layoutX="73.0" layoutY="16.0" prefHeight="23.0" prefWidth="143.0" />
+      <Label layoutX="226.0" layoutY="20.0" prefHeight="15.0" prefWidth="48.0" text="发帖人：" />
+      <TextField fx:id="fx_post_author_text" editable="false" layoutX="276.0" layoutY="16.0" prefHeight="23.0" prefWidth="161.0" />
+      <Label layoutX="14.0" layoutY="52.0" text="帖子标题：" />
+      <TextField fx:id="fx_post_title_text" editable="false" layoutX="73.0" layoutY="48.0" prefHeight="23.0" prefWidth="363.0" />
+      <Label layoutX="14.0" layoutY="81.0" text="帖子内容：" />
+      <TextArea fx:id="fx_post_content_text" editable="false" layoutX="74.0" layoutY="81.0" prefHeight="94.0" prefWidth="363.0" wrapText="true" />
+      <Label layoutX="14.0" layoutY="181.0" text="会员评论：" />
+      <ListView fx:id="fx_post_comments_list" layoutX="73.0" layoutY="182.0" onMouseClicked="#onMouseClick" prefHeight="209.0" prefWidth="363.0" />
+      <Label layoutX="14.0" layoutY="397.0" text="我来评论：" />
+      <Button fx:id="fx_post_publish_btn" layoutX="372.0" layoutY="444.0" mnemonicParsing="false" onAction="#onBtnPublish" text="发表评论" />
+      <TextArea fx:id="fx_post_mycomment_text" layoutX="74.0" layoutY="397.0" prefHeight="41.0" prefWidth="363.0" wrapText="true" />
+   </children>
+</AnchorPane>

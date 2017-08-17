@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="fx_forumopt_pane" prefHeight="413.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ForumOptControl">
+   <children>
+      <ImageView fitHeight="180.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../drawable/forum_new.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="5.0" layoutY="183.0" text="论坛名称:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_forum_forumname" layoutX="91.0" layoutY="181.0" prefHeight="27.0" prefWidth="205.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="6.0" layoutY="297.0" text="设定版主:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="329.0" text="特定设置:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="fx_forum_combox" layoutX="91.0" layoutY="293.0" prefHeight="23.0" prefWidth="190.0" />
+      <CheckBox fx:id="fx_forum_top_checkbox" layoutX="91.0" layoutY="330.0" mnemonicParsing="false" text="置顶">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="fx_forum_nosee_checkbox" layoutX="220.0" layoutY="329.0" mnemonicParsing="false" text="隐藏">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="fx_forum_update_btn" layoutX="77.0" layoutY="366.0" mnemonicParsing="false" onAction="#onBtnUpdate" prefHeight="33.0" prefWidth="151.0" text="确认修改">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="6.0" layoutY="209.0" text="当前版主:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_forum_secthead" layoutX="91.0" layoutY="207.0" prefHeight="27.0" prefWidth="205.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="6.0" layoutY="237.0" text="创建时间:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_forum_date" layoutX="91.0" layoutY="235.0" prefHeight="27.0" prefWidth="205.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="6.0" layoutY="265.0" text="是否置顶:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_forum_istop" layoutX="91.0" layoutY="263.0" prefHeight="27.0" prefWidth="46.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="265.0" text="是否可见:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fx_forum_issee" layoutX="240.0" layoutY="263.0" prefHeight="27.0" prefWidth="52.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

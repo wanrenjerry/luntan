@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="fx_login_pane" prefHeight="318.0" prefWidth="418.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginControl">
+   <children>
+      <PasswordField id="password_text" fx:id="fx_password_text" layoutX="84.0" layoutY="269.0" prefHeight="23.0" prefWidth="243.0" />
+      <Label layoutX="12.0" layoutY="241.0" text="UserName：" />
+      <Label layoutX="16.0" layoutY="272.0" text="PassWord：" />
+      <TextField id="name_text" fx:id="fx_name_text" layoutX="84.0" layoutY="237.0" prefHeight="23.0" prefWidth="243.0" />
+      <Button id="login_btn" fx:id="fx_login_btn" layoutX="336.0" layoutY="237.0" mnemonicParsing="false" onAction="#onBtnLogin" prefHeight="23.0" prefWidth="62.0" text="登陆" />
+      <Button id="regist_btn" fx:id="fx_regist_btn" layoutX="336.0" layoutY="269.0" mnemonicParsing="false" onAction="#onBtnRegist" prefHeight="23.0" prefWidth="62.0" text="注册" />
+      <ImageView fitHeight="222.0" fitWidth="418.0">
+         <image>
+            <Image url="@../../drawable/login.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

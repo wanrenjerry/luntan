@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="424.0" prefWidth="338.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PostContentControl">
+   <children>
+      <Label layoutX="11.0" layoutY="12.0" text="标题:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fx_post_content_title" editable="false" layoutX="58.0" layoutY="11.0" prefHeight="23.0" prefWidth="264.0" />
+      <TextArea fx:id="fx_post_content" editable="false" layoutX="59.0" layoutY="44.0" prefHeight="124.0" prefWidth="264.0" wrapText="true" />
+      <Label layoutX="10.0" layoutY="39.0" text="内容:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="174.0" text="评论:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="fx_post_comments" layoutX="58.0" layoutY="178.0" prefHeight="240.0" prefWidth="264.0" />
+   </children>
+</AnchorPane>

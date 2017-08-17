@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="fx_forum_tab_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ForumTabControl">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="10.0" prefHeight="25.0" prefWidth="500.0" text="已有的论坛主题">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ListView id="haved_luntan_list" fx:id="fx_forum_tab_listview" layoutY="38.0" onMouseClicked="#onMouseClick" prefHeight="565.0" prefWidth="500.0" />
+   </children>
+</AnchorPane>
